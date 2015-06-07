@@ -10,7 +10,7 @@ Examples
 
 - import the library and login to BeEF
 ```
-In [1]: from core.beefapi import BeefAPI
+In [1]: from beefapi import BeefAPI
 
 In [2]: beef = BeefAPI({})
 
