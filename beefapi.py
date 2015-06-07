@@ -114,7 +114,7 @@ class SessionList(UserList):
 	def findbyos(self, os):
 		res = SessionList([])
 		for s in self.data:
-			if os in s.os:
+			if (s.os.lower().find(os.lower()) != -1):
 				res.append(s)
 		return res
 
