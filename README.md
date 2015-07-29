@@ -3,13 +3,13 @@ BeEF-API
 
 Python library that facilitates interacting with [BeEF](http://beefproject.com/) via it's RESTful API
 
-Requires Python 2.7 and the ```requests``` package
+Requires Python 2.7 and the ```requests``` package (```pip install requests```)
 
 Examples
 ========
 
 - import the library and login to BeEF
-```
+```python
 In [1]: from beefapi import BeefAPI
 
 In [2]: beef = BeefAPI({})
@@ -19,7 +19,7 @@ Out[3]: True
 
 ```
 - Print the id and name of all available modules:
-```
+```python
 In [10]: for module in beef.modules:  
    ....:     print module.id, module.name
    ....:
@@ -36,7 +36,7 @@ In [10]: for module in beef.modules:
 ```
 
 - Find all modules containing the string 'd-link' and print their id and name:
-```
+```python
 In [7]: for module in beef.modules.findbyname('d-link'):
    ...:     print module.id, module.name
    ...:     
@@ -49,7 +49,7 @@ In [7]: for module in beef.modules.findbyname('d-link'):
 ```
 
 - Find all online hooked browsers that have the string 'windows' in their OS attribute
-```
+```python
 In [7]: beef.hooked_browsers.online.findbyos('windows')
 Out[7]: [<core.beefapi.Session object at 0x7f24b40dd710>]
 
@@ -77,7 +77,7 @@ Out[11]:
 ```
 
 - Print the id, browser and os of all online hooked browsers
-```
+```python
 In [13]: for hook in beef.hooked_browsers.online:
     print hook.id, hook.name, hook.os
    ....:     
@@ -93,7 +93,7 @@ In [14]: for hook in beef.hooked_browsers.online:
 ```
 
 - Get the results of the previously executed module
-```
+```python
 In [25]: beef.hooked_browsers.online
 Out[25]: [<core.beefapi.Session object at 0x7f079cd89090>]
 
