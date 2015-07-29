@@ -85,7 +85,7 @@ In [13]: for hook in beef.hooked_browsers.online:
 ```
 
 - Run a module against all online hooked browsers:
-```
+```python
 In [14]: for hook in beef.hooked_browsers.online:
    ....:     print hook.run(223)
    ....:     
