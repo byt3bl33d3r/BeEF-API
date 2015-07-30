@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='beefapi',
-    version='0.2',
+    version='0.2.1',
     description = 'Python library that facilitates interfacing with BeEF via it\'s RESTful API',
     url='https://github.com/byt3bl33d3r/BeEF-API',
     author='byt3bl33d3r',
